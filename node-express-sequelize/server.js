@@ -8,7 +8,10 @@ var User = sequelize.define('User', {
 });
 
 app.get('/users', function(req,res){
-	User.findAll().then(function(users){
+	User.findAll().then(function(err,users){
+		if(err){
+			res.statusCode(404)
+		}
 		res.json(users)
 	})
 })

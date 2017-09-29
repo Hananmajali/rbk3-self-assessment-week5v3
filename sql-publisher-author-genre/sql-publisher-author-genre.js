@@ -17,7 +17,7 @@ var sqlPublisherAuthorSchema = OPTION_6
 // so we used the inner join tables
 
 
-var sqlPublisherGenreSchema = OPTION_3
+var sqlPublisherGenreSchema = OPTION_4
 // because the relationship here its (one to many)
 
 
